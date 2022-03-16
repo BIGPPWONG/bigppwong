@@ -31,7 +31,7 @@ url: "bigppwong.github.io" # the base hostname & protocol for your site, e.g. ht
 github_username:  bigppwong
 
 # Build settings
-theme: minima
+theme: jekyll-theme-cayman
 plugins:
   - jekyll-feed
 

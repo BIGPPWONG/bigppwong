@@ -1,8 +1,9 @@
+---
 layout: post
 title: "使用Docker运行OpenWrt旁路由"
-date: 2022-03-16 15:07:00 -0000
+date: 2022-03-16 15:07:00 -0800
 categories: 网络
-
+---
 `https://www.sjlx.win/auth/register?code=tIim`   
 Method ONE(recommended):  
 step1: `ip link set [net interface] promisc on`  
