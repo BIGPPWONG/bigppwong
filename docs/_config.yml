@@ -30,7 +30,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "bigppwong.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
 github_username:  bigppwong
-locale: "zh"
+locale: "zh-CN"
 
 # Build settings
 #theme: 
