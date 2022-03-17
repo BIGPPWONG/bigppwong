@@ -1,5 +1,6 @@
 ---
-layout: posts
+layout: single
+author: 剧烈燃烧的CO2
 title:  "将编译好的OpenWrt镜像转换为Docker镜像"
 comments: true
 header:

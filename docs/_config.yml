@@ -72,12 +72,11 @@ defaults:
       type: posts
     values:
       layout: single
-      #author_profile: true
+      author_profile: true
       show_date: true
       comments: true
       related: true
       #share: true
-      #author: 剧烈燃烧的CO2
   # _pages
   - scope:
       path: ""
