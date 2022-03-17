@@ -4,10 +4,6 @@ title:  "使用Docker搭建OpenWrt旁路由"
 header:
   #image: https://simonhux.com/p/docker-%E5%AE%89%E8%A3%85-openwrt/bg.png
   overlay_color: "#333"
-  #og_image: https://simonhux.com/p/docker-%E5%AE%89%E8%A3%85-openwrt/bg.png
-author_profile: true
-show_date: true
-comments: true
 categories: 
  - 网络
  - OpenWrt
