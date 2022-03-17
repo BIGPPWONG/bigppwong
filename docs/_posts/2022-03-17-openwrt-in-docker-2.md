@@ -28,4 +28,4 @@ CMD ["/sbin/init"]
 docker build -t myopenwrt .
 ```  
 理论上来说到这一步Docker镜像就已经制作完成了，但由于OP默认的防火墙和IP设置，直接运行镜像会导致网络崩溃，所以接下来还要修改一些配置  
-4. **将下面几个文件保存到Dockerfile同一目录**
+4. **将下面几个文件保存到Dockerfile同一目录**  
