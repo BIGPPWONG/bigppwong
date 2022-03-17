@@ -1,0 +1,8 @@
+剧烈燃烧的CO2:
+  name        : "剧烈燃烧的CO2"
+  bio         : "因为游戏而热衷于研究网络的Geek一枚"
+  avatar      : "/assets/images/bio-photo-1.png"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:weiwen.wong90@gmail.com"

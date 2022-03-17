@@ -1,26 +1,46 @@
 ---
-layout: post
-title: "使用Docker运行OpenWrt旁路由"
-date: 2022-03-16 15:07:00 -0800
-categories: 网络
+layout: posts
+title:  "使用Docker搭建OpenWrt旁路由"
+header:
+  image: https://simonhux.com/p/docker-%E5%AE%89%E8%A3%85-openwrt/bg.png
+  #og_image: https://simonhux.com/p/docker-%E5%AE%89%E8%A3%85-openwrt/bg.png
+author_profile: true
+show_date: true
+categories: 
+ - 网络
+ - OpenWrt
 ---
-`https://www.sjlx.win/auth/register?code=tIim`   
-Method ONE(recommended):  
-step1: `ip link set [net interface] promisc on`  
-step2: `docker network create -d macvlan --subnet=192.168.1.0/24 --gateway=192.168.1.1 -o parent=[net interface] macnet`  
-step3: `docker run --restart always -d --network macnet --privileged -v /lib/modules:/lib/modules raymondwong/openwrt_r9:autobuild-21.12.6-arm64 /sbin/init`  
-step4: go to `http://192.168.1.254` Enjoy!  
 
-Method TWO(docker compse):  
-step1:`ip link set [interface] promisc on`  
-step2: `mkdir openwrt&&cd openwrt`   
-step3: copy below code to a file named 'docker-compose.yaml' in current directory, and modify `option parent`to your network interface  
-step4: `docker-compose up -d`  
-step5: go to `http://192.168.1.254` Enjoy!  
-`user: root password:password`   
+本方案原理：
+>使用docker的macvlan网络为容器虚拟出一个二层网卡，作为容器物理网卡，和虚拟机桥接网络类似
+
+**固件默认账号：**`root` **密码：**`password` 
+{: .notice}
+
+**传送门:** [镜像仓库链接](https://hub.docker.com/r/raymondwong/openwrt_r9)，[我在用的网站](https://www.sjlx.win/auth/register?code=tIim)
+{: .notice--info}
+
+方案一（命令行）:  
+```
+ip link set [修改为本地网卡名称，如eth0] promisc on 
+docker network create -d macvlan --subnet=192.168.1.0/24 --gateway=192.168.1.1 -o parent=[修改为本地网卡名称，与上一步保持一致] macnet
+docker run --restart always -d --network macnet --privileged -v /lib/modules:/lib/modules raymondwong/openwrt_r9:autobuild-21.12.6-arm64
+```
+>等待容器进入`running`状态后，打开[http://192.168.1.254](http://192.168.1.254)，测试部署是否成功
+{: .text-left}
+
+方案二(docker compse):  
+```
+ip link set [修改为本地网卡名称，如eth0] promisc on 
+mkdir openwrt&&cd openwrt 
+将下面代码复制到文件 'docker-compose.yaml', 并将 `driver_opts: parent`的值改为需要桥接的网口
+在创建'docker-compose.yaml'文件的同一目录下运行命令`docker-compose up -d` 
+```
+>等待容器进入`running`状态后，打开[http://192.168.1.254](http://192.168.1.254)，测试部署是否成功
+  
+**docker-compose.yaml：**
 ```
 version: '2'
-
 services:
   openwrt:
     image: raymondwong/openwrt_r9:21.2.1-arm64
@@ -43,3 +63,5 @@ networks:
           gateway: 192.168.1.1
 ```
 
+备注：
+>此教程方案为单网卡方案，如果遇到某些插件工作不正常，可以尝试添加2个虚拟网卡，模拟真正的路由   
