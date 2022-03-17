@@ -1,6 +1,7 @@
 ---
 layout: single
 title:  "使用Docker搭建OpenWrt旁路由"
+author: 剧烈燃烧的CO2
 header:
   #image: https://simonhux.com/p/docker-%E5%AE%89%E8%A3%85-openwrt/bg.png
   overlay_color: "#333"
