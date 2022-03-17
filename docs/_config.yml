@@ -33,7 +33,7 @@ github_username:  bigppwong
 locale: "zh-CN"
 teaser: /assets/images/teaser-1.png
 search: true
-timezone: Asia/Shanghai
+#timezone: "Asia/Shanghai"
 
 # Build settings
 #theme: 

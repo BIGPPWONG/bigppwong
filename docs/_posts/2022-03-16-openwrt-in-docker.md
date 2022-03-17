@@ -2,7 +2,8 @@
 layout: posts
 title:  "使用Docker搭建OpenWrt旁路由"
 header:
-  image: https://simonhux.com/p/docker-%E5%AE%89%E8%A3%85-openwrt/bg.png
+  #image: https://simonhux.com/p/docker-%E5%AE%89%E8%A3%85-openwrt/bg.png
+  overlay_color: "#333"
   #og_image: https://simonhux.com/p/docker-%E5%AE%89%E8%A3%85-openwrt/bg.png
 author_profile: true
 show_date: true
@@ -12,8 +13,7 @@ categories:
  - OpenWrt
 ---
 
-本方案原理：
->使用docker的macvlan网络为容器虚拟出一个二层网卡，作为容器物理网卡，和虚拟机桥接网络类似
+**本方案原理：**使用docker的macvlan网络为容器虚拟出一个二层网卡，作为容器物理网卡，和虚拟机桥接网络类似
 
 **固件默认账号：**`root` **密码：**`password` 
 {: .notice}
