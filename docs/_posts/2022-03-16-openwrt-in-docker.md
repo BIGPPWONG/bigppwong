@@ -1,5 +1,5 @@
 ---
-layout: posts
+# layout: posts
 title:  "使用Docker搭建OpenWrt旁路由"
 header:
   #image: https://simonhux.com/p/docker-%E5%AE%89%E8%A3%85-openwrt/bg.png
