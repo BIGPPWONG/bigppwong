@@ -8,4 +8,4 @@ categories:
  - OpenWrt
 ---
 
-to be writed.....
+本教程内容：将`openwrt-x86-64-generic-rootfs.tar.gz`系统文件打包成Docker镜像，以便进行旁路由部署
