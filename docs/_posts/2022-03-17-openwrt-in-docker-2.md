@@ -1,6 +1,7 @@
 ---
-layout: posts
+layout: single
 title:  "将编译好的OpenWrt镜像转换为Docker镜像"
+comments: true
 header:
   overlay_color: "#333"
 categories: 
