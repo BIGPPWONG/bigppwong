@@ -86,5 +86,6 @@ defaults:
       type: pages
     values:
       layout: single
+      comments: true
       author_profile: true
       author: 剧烈燃烧的CO2
