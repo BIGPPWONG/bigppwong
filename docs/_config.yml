@@ -31,6 +31,9 @@ url: "bigppwong.github.io" # the base hostname & protocol for your site, e.g. ht
 #twitter_username: jekyllrb
 github_username:  bigppwong
 locale: "zh-CN"
+teaser: /assets/images/teaser-1.png
+search: true
+timezone: Asia/Shanghai
 
 # Build settings
 #theme: 
