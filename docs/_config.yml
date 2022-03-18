@@ -16,8 +16,8 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "zh-CN"
-title                    : "剧烈燃烧的CO2の博客"
-title_separator          : "|"
+title                    : "剧烈燃烧的CO2"
+title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "剧烈燃烧的CO2"
 description              : "日常技术折腾小玩意随笔"
@@ -25,9 +25,9 @@ url                      : "https://bigppwong.github.io" # the base hostname & p
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "bigppwong/bigppwong.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : "/assets/images/teaser-1.png" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "/assets/images/剧烈燃烧的CO2-logos_transparent.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : " "# overrides the website title displayed in the masthead, use " " for no title
-# breadcrumbs            : false # true, false (default)
+logo                     : "" #"/assets/images/剧烈燃烧的CO2-logos_transparent-88x88.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+masthead_title           : ""# overrides the website title displayed in the masthead, use " " for no title
+breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
   provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
@@ -103,7 +103,7 @@ analytics:
 # Site Author
 author:
   name             : "剧烈燃烧的CO2"
-  avatar           : "/assets/images/bio-photo-1.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/剧烈燃烧的CO2-logos.jpeg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "**LESS** is **MORE.**"
   location         : "JM|CN"
   email            :
