@@ -1,5 +1,6 @@
 main:
   - title: "分类"
     url: /categories/
+    
   # - title: "关于我"
   #   url: /about/
