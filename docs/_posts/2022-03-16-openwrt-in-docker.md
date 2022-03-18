@@ -19,7 +19,7 @@ categories:
 {: .notice--info}
 
 方案一（命令行）:  
-```
+```shell
 ip link set [修改为本地网卡名称，如eth0] promisc on 
 docker network create -d macvlan --subnet=192.168.1.0/24 --gateway=192.168.1.1 -o parent=[修改为本地网卡名称，与上一步保持一致] macnet
 docker run --restart always -d --network macnet --privileged -v /lib/modules:/lib/modules raymondwong/openwrt_r9:autobuild-21.12.6-arm64
@@ -28,7 +28,7 @@ docker run --restart always -d --network macnet --privileged -v /lib/modules:/li
 {: .text-left}
 
 方案二(docker compse):  
-```
+```shell
 ip link set [修改为本地网卡名称，如eth0] promisc on 
 mkdir openwrt&&cd openwrt 
 将下面代码复制到文件 'docker-compose.yaml', 并将 `driver_opts: parent`的值改为需要桥接的网口
@@ -37,7 +37,7 @@ mkdir openwrt&&cd openwrt
 >等待容器进入`running`状态后，打开[http://192.168.1.254](http://192.168.1.254)，测试部署是否成功
   
 **docker-compose.yaml：**
-```
+```yaml
 version: '2'
 services:
   openwrt:
