@@ -22,7 +22,7 @@ subtitle                 : # site tagline that appears below site title in masth
 name                     : "剧烈燃烧的CO2"
 description              : "日常技术折腾小玩意随笔"
 url                      : "https://bigppwong.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : "/bigppwong" # the subpath of your site, e.g. "/blog"
+baseurl                  : "/cnblog" # the subpath of your site, e.g. "/blog"
 repository               : "bigppwong/bigppwong.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : "/assets/images/christopher-burns-Kj2SaNHG-hg-unsplash.jpg" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "" #"/assets/images/剧烈燃烧的CO2-logos_transparent-88x88.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
