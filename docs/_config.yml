@@ -105,7 +105,7 @@ author:
   name             : "剧烈燃烧的CO2"
   avatar           : "/assets/images/剧烈燃烧的CO2-logos.jpeg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "**LESS** is **MORE.**"
-  location         : "JM|CN"
+  location         : 
   email            :
   links:
     - label: "Email"
